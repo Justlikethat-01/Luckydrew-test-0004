@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Lotteries | LuckyDraw</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <section class="lottery-listings">
+        <div class="container">
+            <h1>Current Lotteries</h1>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="all">All Categories</option>
+                        <option value="vehicles">Vehicles</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="cash">Cash Prizes</option>
+                        <option value="property">Property</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="ending">Ending Soonest</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-low">Price (Low to High)</option>
+                        <option value="price-high">Price (High to Low)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="lottery-grid" id="lotteryGrid">
+                <!-- Lottery items will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/lottery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

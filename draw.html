@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Draw | LuckyDraw</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <section class="live-draw">
+        <div class="container">
+            <h1>Live Draw: Toyota Camry 2023</h1>
+            <div class="draw-container">
+                <div class="draw-prize">
+                    <img src="images/toyota-camry.png" alt="Prize">
+                    <div class="prize-details">
+                        <h2>Toyota Camry 2023</h2>
+                        <p>Value: ₦12,000,000</p>
+                        <p>Tickets Sold: 2,134/2,400</p>
+                        <p>Draw Time: 25 Dec 2023, 3:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="draw-machine">
+                    <div class="machine-display" id="drawNumber">
+                        <span>L</span>
+                        <span>D</span>
+                        <span>-</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>-</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                    <button id="startDraw" class="btn-primary">Start Draw</button>
+                </div>
+                
+                <div class="draw-winner" id="winnerInfo" style="display: none;">
+                    <h2>Congratulations to our winner!</h2>
+                    <div class="winner-card">
+                        <img src="images/user-avatar.jpg" alt="Winner">
+                        <div>
+                            <h3>Winner Name</h3>
+                            <p>Ticket Number: <span id="winningTicket">LD-00000-000</span></p>
+                            <p>Location: City, State</p>
+                        </div>
+                    </div>
+                    <p>Our representative will contact the winner shortly.</p>
+                </div>
+            </div>
+            
+            <div class="previous-winners">
+                <h2>Previous Winners</h2>
+                <div class="winners-grid">
+                    <div class="winner">
+                        <img src="images/user1.jpg" alt="Winner">
+                        <h3>Adeola B.</h3>
+                        <p>Won: Toyota Camry</p>
+                        <p>Nov 2023</p>
+                    </div>
+                    <div class="winner">
+                        <img src="images/user2.jpg" alt="Winner">
+                        <h3>Chinedu O.</h3>
+                        <p>Won: iPhone 15 Pro</p>
+                        <p>Oct 2023</p>
+                    </div>
+                    <div class="winner">
+                        <img src="images/user3.jpg" alt="Winner">
+                        <h3>Fatima K.</h3>
+                        <p>Won: ₦5,000,000</p>
+                        <p>Sep 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/lottery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | LuckyDraw</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <section class="user-dashboard">
+        <div class="container">
+            <div class="dashboard-sidebar">
+                <div class="user-profile">
+                    <img src="images/user-avatar.jpg" alt="User Avatar">
+                    <h3>John Doe</h3>
+                    <p>Member since: Jan 2023</p>
+                </div>
+                <nav class="dashboard-nav">
+                    <ul>
+                        <li><a href="#" class="active">My Tickets</a></li>
+                        <li><a href="#">My Wins</a></li>
+                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="dashboard-content">
+                <h1>My Active Tickets</h1>
+                <div class="ticket-list">
+                    <!-- Active tickets will be loaded here -->
+                    <div class="ticket-card">
+                        <div class="ticket-prize">
+                            <img src="images/car.png" alt="Prize">
+                            <div>
+                                <h3>Toyota Camry 2023</h3>
+                                <p>Draw Date: Dec 25, 2023</p>
+                            </div>
+                        </div>
+                        <div class="ticket-details">
+                            <p>Ticket Number: LD-23456-789</p>
+                            <p>Purchase Date: Nov 15, 2023</p>
+                            <p>Status: <span class="status-active">Active</span></p>
+                        </div>
+                    </div>
+                    <div class="ticket-card">
+                        <div class="ticket-prize">
+                            <img src="images/iphone.png" alt="Prize">
+                            <div>
+                                <h3>iPhone 15 Pro Max</h3>
+                                <p>Draw Date: Dec 18, 2023</p>
+                            </div>
+                        </div>
+                        <div class="ticket-details">
+                            <p>Ticket Number: LD-98765-432</p>
+                            <p>Purchase Date: Nov 10, 2023</p>
+                            <p>Status: <span class="status-active">Active</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Past Participations</h2>
+                <div class="past-tickets">
+                    <div class="ticket-card past">
+                        <div class="ticket-prize">
+                            <img src="images/cash.png" alt="Prize">
+                            <div>
+                                <h3>₦2,000,000 Cash</h3>
+                                <p>Draw Date: Oct 30, 2023</p>
+                            </div>
+                        </div>
+                        <div class="ticket-details">
+                            <p>Ticket Number: LD-12345-678</p>
+                            <p>Status: <span class="status-lost">Not Won</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

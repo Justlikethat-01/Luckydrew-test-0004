@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Payment | LuckyDraw</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+
+    <section class="payment-process">
+        <div class="container">
+            <div class="payment-steps">
+                <div class="step active">
+                    <span>1</span>
+                    <p>Select Tickets</p>
+                </div>
+                <div class="step active">
+                    <span>2</span>
+                    <p>Enter Details</p>
+                </div>
+                <div class="step current">
+                    <span>3</span>
+                    <p>Make Payment</p>
+                </div>
+                <div class="step">
+                    <span>4</span>
+                    <p>Get Tickets</p>
+                </div>
+            </div>
+            
+            <div class="payment-container">
+                <div class="order-summary">
+                    <h3>Your Order</h3>
+                    <div class="summary-item">
+                        <p>Toyota Camry Lottery</p>
+                        <p>₦5,000 × 2</p>
+                        <p>₦10,000</p>
+                    </div>
+                    <div class="summary-total">
+                        <p>Total</p>
+                        <p>₦10,000</p>
+                    </div>
+                    
+                    <div class="ticket-numbers">
+                        <h4>Your Ticket Numbers:</h4>
+                        <div class="numbers-grid">
+                            <span>LD-23456-001</span>
+                            <span>LD-23456-002</span>
+                        </div>
+                        <small>These will be confirmed after payment</small>
+                    </div>
+                </div>
+                
+                <div class="payment-options">
+                    <h3>Select Payment Method</h3>
+                    
+                    <div class="payment-tabs">
+                        <button class="tab-btn active" data-tab="bank">Bank Transfer</button>
+                        <button class="tab-btn" data-tab="card">Debit/Credit Card</button>
+                        <button class="tab-btn" data-tab="crypto">Cryptocurrency</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="bank">
+                        <div class="bank-details">
+                            <h4>Make Transfer to:</h4>
+                            <div class="detail-item">
+                                <span>Bank Name:</span>
+                                <p>Guaranty Trust Bank</p>
+                            </div>
+                            <div class="detail-item">
+                                <span>Account Name:</span>
+                                <p>LuckyDraw Nigeria Ltd</p>
+                            </div>
+                            <div class="detail-item">
+                                <span>Account Number:</span>
+                                <p>0123456789</p>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <div class="detail-item">
+                                <span>Amount:</span>
+                                <p class="amount">₦10,000.00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="upload-receipt">
+                            <h4>Upload Payment Proof</h4>
+                            <div class="upload-box">
+                                <input type="file" id="receiptUpload" accept="image/*">
+                                <label for="receiptUpload">
+                                    <span>+</span>
+                                    <p>Click to upload transfer receipt</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="card">
+                        <form class="card-form">
+                            <div class="form-group">
+                                <label>Card Number</label>
+                                <input type="text" placeholder="1234 5678 9012 3456">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Expiry Date</label>
+                                    <input type="text" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group">
+                                    <label>CVV</label>
+                                    <input type="text" placeholder="123">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Cardholder Name</label>
+                                <input type="text" placeholder="As on card">
+                            </div>
+                            <button type="submit" class="btn-primary">Pay ₦10,000</button>
+                        </form>
+                    </div>
+                    
+                    <div class="tab-content" id="crypto">
+                        <div class="crypto-options">
+                            <div class="crypto-option active" data-crypto="bitcoin">
+                                <img src="images/payment-methods/bitcoin.png" alt="Bitcoin">
+                                <p>Bitcoin</p>
+                            </div>
+                            <div class="crypto-option" data-crypto="usdt">
+                                <img src="images/payment-methods/usdt.png" alt="USDT">
+                                <p>USDT</p>
+                            </div>
+                        </div>
+                        
+                        <div class="crypto-address" id="bitcoin-address">
+                            <h4>Send Bitcoin to:</h4>
+                            <div class="address-box">
+                                <p id="btc-address">3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5</p>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <div class="qrcode">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=bitcoin:3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5" alt="BTC QR Code">
+                            </div>
+                            <div class="amount-box">
+                                <p>Amount: <span>0.00234 BTC</span></p>
+                                <small>(≈ ₦10,000.00)</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <script src="js/payment.js"></script>
+</body>
+</html>
